@@ -1,0 +1,67 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #778;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #1092;
+}
+
+.active {
+  background-color: rgb(223, 31, 31);
+}
+
+.Bruh {
+  color: white;
+}
+.line {
+  height: 10px;
+  width: 500px
+}
+h4 {
+column-rule: 9px solid gray;
+column-count: 2;
+column-gap: 19px;
+column-width: 15px;
+}
+@media only screen and (min-width: 600px) {
+  .regular {
+    visibility: hidden;
+  }
+  img {
+    position: relative;
+    animation: miniBounce 2s infinite;
+  }
+  img {
+    position: relative;
+    animation: SmallBounce 4s infinite;
+  }
+}
+@keyframes SmallBounce {
+  0% {top:15px; left: 15px;}
+  10% {top: -15px; left: 9px;transform: rotate(2deg);}
+  30%{top: -100px; left: 100px; transform: rotate(-360deg)}
+  45% {top: 20px; left: 20px;}
+  55% {top: -20px; left: 10px; transform: rotate(-2deg);}
+  77% {top: 100px; left: -100px; transform: rotate(360deg)}
+  99% {top: 20px; left: 20px;}
+}
